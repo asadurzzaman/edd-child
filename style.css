@@ -1,0 +1,489 @@
+/*
+Theme Name: wcFusion Child
+Theme URI: https://wpcommerz.com/
+Template: wcFusion
+Author: wcFusion
+Author URI: https://wpcommerz.com/
+Description: This is on of the most popular woocommerce customizer plugin.
+Tags: corporate,business,agency,responsive,elementor,creative,redux,theme-options,custom-widget,custom-background,easy-customize,bootstrap4,custom-logo,custom-menu,featured-images,threaded-comments,translation-ready
+Version: 1.0.1.1671038396
+Updated: 2022-12-14 17:19:56
+
+*/
+@font-face {
+    font-family: 'fontello';
+    src: url('./assets/fonts/fontello.eot?14877745');
+    src: url('./assets/fonts/fontello.eot?14877745#iefix') format('embedded-opentype'),
+        url('./assets/fonts/fontello.woff?14877745') format('woff'),
+        url('./assets/fonts/fontello.ttf?14877745') format('truetype'),
+        url('./assets/fonts/fontello.svg?14877745#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.demo-icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+/* Account Page style */
+.wfn-myaccount-area {
+    padding-top: 100px;
+    background: linear-gradient(180deg, #EFEAFF 0%, rgba(248, 246, 255, 230) 100%);
+    padding-bottom: 100px;
+}
+.wfn-myaccount-area .myaccount-wrapper .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+.wfn-myaccount-area .myaccount-wrapper .tabs .tab_item.active {
+    background: #fff;
+}
+.wfn-myaccount-area .myaccount-wrapper .tabs .tab_item {
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    padding: 10px 15px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.header-section {
+    margin-bottom: 50px;
+}
+.header-section p{
+    margin: 0px;
+}
+.wfn-myaccount-area .tap-body-wrapper {
+    background: #f2efff;
+    padding: 0px;
+    position: relative;
+    margin-top: 20px;
+}
+.global_part h4{
+    font-size: 22px;
+    margin: 10px 0;
+    padding: 0;
+    color:#0a1411;
+    padding-left: 3px;
+}
+.edd-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+.edd-footer ul li {
+    display: inline-block;
+}
+.edd-footer ul li:last-child { 
+    float: right !important;
+}
+.edd-footer ul li a { 
+    background: #ccc;
+    padding: 7px 15px;
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+}
+.manage_site .edd_title{
+    background: #fff;
+    border: 1px solid #f4f7fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 #0c0d0e0d;
+    display: block;
+    margin-bottom: 20px; 
+    padding: 15px;
+}
+.manage_site .website_list{
+    background: #fff;
+    border: 1px solid #f4f7fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 #0c0d0e0d;
+    display: block;  
+    padding: 15px 15px 22px 15px;
+}
+.edd-footer ul li.download_button a{
+    border: 1px solid #85ce6147;
+    background: #85ce6114;
+    color: #85ce61;
+}
+.edd-footer ul li.download_button a:hover{
+    background: #85ce61;
+    color: #fff;
+}
+.edd-footer ul li.extend_button a{
+    background: #dd6161;
+    color: #fff;
+    border: 1px solid #dd6161;
+}
+.edd-footer ul li.extend_button a:hover{
+    background: #e77171;
+}
+.edd-footer ul li.manage_button a{
+    background: #90939942;
+    border: 1px solid #90939942;
+    color: #909399;
+}
+.edd-footer ul li.manage_button a:hover{
+    background: #909399;
+    color: #fff;
+}
+.edd-footer ul li.renew_button a{}
+.edd-footer ul li.renew_button a:hover{
+
+}
+.edd-sl-active {
+    color: green;
+    background-color: #e9fcf2;
+    padding: 0px 10px;
+}
+.edd-footer {
+    padding-top: 30px;
+    border-top: 2px solid #ccc;
+}
+p.license_status.license_active.edd-sl-inactive,
+p.license_status.license_active.edd-sl-active {
+border-radius: 2px;
+font-size: 14px;
+padding: 0 10px;
+position: absolute;
+right: 5px;
+text-transform: capitalize;
+top: 5px;
+}
+.edd_title h4 {
+    font-size: 22px;
+    color: #515861;
+}
+ul.licenses_info {
+    padding: 15px 0px !important;
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+ul.licenses_info li {
+    margin-right: 15px; 
+    font-size: 12px;
+    color: #515861;
+}
+ul.licenses_info li i{
+font-size: 12px;
+}
+.license_details p {
+    font-size: 18px;
+    color: #515861;
+}
+.license_details p code{
+    color: #515861;
+}
+.edd-footer ul li a i {
+    margin-right: 6px;
+}
+.wfn-myaccount-area table#edd_sl_license_sites {
+    margin: 30px 0px;
+    width: 100%;
+}
+form#edd_sl_license_add_site_form {
+    position: relative;
+}
+.wfn-myaccount-area form#edd_sl_license_add_site_form input[type="submit"] {
+    position: absolute;
+    padding: 10px 29px !important;
+    border: 1px solid #7936C6 !important;
+    /* margin-top: 12%; */
+    width: 190px;
+    height: 47px;
+    right: 0px;
+    left: auto;
+    bottom: -5%;
+    top: auto;
+}
+.wfn-myaccount-area form#edd_sl_license_add_site_form input.edd-input {
+    left: 0px;
+    transform: inherit;
+    width: 100%;
+}
+.wfn-myaccount-area form#edd_sl_license_add_site_form input.edd-input {
+    left: 0px;
+    transform: inherit;
+    width: 100%;
+    margin: 0px !important;
+}
+.add_site {
+    position: absolute; 
+}
+.product_name h4 {
+    font-size: 24px;
+    color: #515861;
+}
+.product_name h4 span.edd_subscription_billing_cycle {
+    font-size: 13px;
+    font-weight: normal;
+}
+.product_name {
+    position: relative;
+}
+.product_name p.status {
+    position: absolute;
+    top: 0px !important;
+    right: 0px !important; 
+}
+ul.date {
+    margin: 20px 0px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+ul.date li {
+    margin-right: 35px; 
+    font-size: 14px;
+    color: #515861;
+}
+.fedd_payment_header{
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 15px 20px 5px;
+}
+.subscriber{
+    background: #fff;
+    border: 1px solid #f4f7fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 #0c0d0e0d;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+}
+.edd_dashborad {
+    background: #fff;
+    border: 1px solid #f4f7fa; 
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 #0c0d0e0d;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.edd_dashborad:hover{
+    box-shadow: 0 3px 16px 0 #d5d8dce6;
+}
+
+.edd_dashborad .edd-footer,
+.edd_dashborad .edd_title {
+    padding: 15px 20px;
+}
+.ph_purchase_history h4,
+.ph_product_details h4,
+.ph_pament_details h4 {
+    font-size: 22px;
+    margin: 10px 0;
+    padding: 0;
+}
+.affwp-referral-url-submit-wrap .button {
+    position: inherit;
+    width: 25% !important;
+    border-radius: 50px;
+    padding: 15px;
+}
+.tablenav .button {
+    position: inherit;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.manage_site {
+    display: block;
+    position: relative; 
+}
+.manage_site a {
+    margin-bottom: 15px;
+}
+.manage_site .license_details p { 
+    margin: 0px;
+}
+.manage_site .license_details h4{
+    font-size: 20px;
+    color: #515861;
+}
+.website_list h4 {
+    margin: 0px;
+    color: #515861;
+    font-size: 22px;
+}
+.fedd_payment_header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.fedd_payment_header li {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+.fedd_payment_header li span.head_label {
+    color: #babfc5 !important;
+    display: block;
+    margin-bottom: 10px;
+}
+#affiliate #affwp-affiliate-dashboard #affwp-affiliate-dashboard-tabs{
+    background: #fff;
+    border-bottom: 1px solid #e9e8e8;
+    margin: -20px 0 20px;
+    padding: 15px 15px 10px;
+    width: auto;
+}
+#affiliate #affwp-affiliate-dashboard #affwp-affiliate-dashboard-tabs li.active a {
+    color: #3f9eff;
+}
+#affiliate #affwp-affiliate-dashboard #affwp-affiliate-dashboard-tabs li a {
+    color: gray;
+    padding: 5px 10px;
+}
+#affwp-generate-ref-url input,
+.affwp-form label+input,
+.affwp-form label+select,
+.affwp-form label+textarea{ 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.affwp-form input{ 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.affwp-save-profile-wrap .button {
+    background: #7936C6;
+    border: unset;
+    padding: 10px 15px;
+    color: #fff;
+    position: inherit;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.affwp-form input {
+    padding: 10px 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: inherit;
+}
+.affwp-form label {
+    display: block;
+}
+.affwp-form { 
+    width: 50%;
+}
+.affwp-form legend {
+    font-size: 30px;
+    margin-bottom: 1em;
+    font-weight: 700;
+    color: #222222;
+}
+.affwp-wrap.affwp-custom-slug-wrap label {
+    display: inline-block;
+}
+.user_name {
+    padding: 0px 5px 20px 0px;
+}
+.user_name p span {
+    font-weight: 500;
+}
+.user_name p {
+    font-size: 22px;
+    color: #0a1411;
+    margin: 0px;
+}
+ul.fedd_payment_header h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.fedd_payment_header li.user_avatar img {
+    border-radius: 100px;
+}
+.button{
+    position: inherit !important;
+}
+
+
+form#edd_register_form,
+form#edd_login_form 
+{
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #f4f7fa;
+    box-shadow: 0 2px 6px 0 #0c0d0e0d;
+}
+form#edd_register_form p label ,
+form#edd_login_form p label 
+{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form#edd_register_form p input ,
+form#edd_login_form p input 
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+}
+form#edd_register_form p input[type="checkout"] ,
+form#edd_login_form p input[type="checkout"] 
+{
+    width: inherit;
+}
+form#edd_register_form p input[type="checkbox"] 
+form#edd_login_form p input[type="checkbox"] 
+{
+    width: inherit;
+}
+p input.edd-submit{
+    font-size: 18px;
+    color: #fff;
+    background: #6e32c9;
+}
+form#edd_register_form legend ,
+form#edd_login_form legend 
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+}
